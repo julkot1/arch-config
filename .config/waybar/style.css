@@ -1,0 +1,90 @@
+/* Global font */
+* {
+  font-family: 'JetBrainsMono Nerd Font', monospace;
+  font-size: 13px;
+}
+
+/* Bar */
+#waybar {
+  background-color: #282a36;   /* Dracula background */
+  color: #f8f8f2;
+  padding: 0 5px;
+}
+
+/* Generic module container */
+.module {
+  padding: 0px 8px;
+  /* unified neutral background */
+  background-color: #3b3f52;    
+  transition: background-color 0.2s ease;
+}
+
+.module:hover {
+  background-color: #4c5066;    /* subtle hover */
+}
+
+/* ------------------ Workspaces ------------------ */
+
+#hyprland-workspaces button {
+  background: transparent;
+  padding: 4px 10px;
+  border-radius: 1px;
+  color: #b9bbc9;
+  transition: background-color 0.2s ease;
+}
+
+#hyprland-workspaces button:hover {
+  background-color: #4c5066;
+  color: #f8f8f2;
+}
+
+#hyprland-workspaces button.active {
+  background-color: #6272a4;   /* single accent color */
+  color: #f8f8f2;
+}
+
+/* ------------------ Unified Module Style ------------------ */
+
+/* Clock */
+#clock {
+  background-color: #3b3f52;
+  color: #f8f8f2;
+  font-weight: bold;
+}
+
+/* Network / Audio / Bluetooth / CPU / Memory / Battery
+   → all same style, only differ when necessary (e.g., battery critical)
+*/
+
+#network,
+#pulseaudio,
+#bluetooth,
+#cpu,
+#memory,
+#battery {
+  background-color: #3b3f52;
+  color: #f8f8f2;
+}
+
+/* Battery special cases */
+#battery.critical {
+  background-color: #ff5555;
+  color: #f8f8f2;
+}
+
+#battery.charging {
+  background-color: #50fa7b;
+  color: #282a36;
+}
+
+/* Tray stays transparent */
+#tray {
+  background-color: transparent;
+}
+
+/* Separator */
+.separator {
+  background-color: transparent;
+  padding: 0 5px;
+  color: #6272a4;   /* subtle accent */
+}
